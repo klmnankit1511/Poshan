@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-SemiBold.eot");
+  src: url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-SemiBold.woff2")
+      format("woff2"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-SemiBold.woff")
+      format("woff"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-SemiBold.svg#Montserrat-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Bold.eot");
+  src: url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Bold.woff2")
+      format("woff2"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Bold.woff")
+      format("woff"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Bold.svg#Montserrat-Bold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Medium.eot");
+  src: url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Medium.woff")
+      format("woff"),
+    url("https://img1.digitallocker.gov.in/porshontracker/Montserrat-Medium.svg#Montserrat-Medium")
+      format("svg");
+  /* font-weight: 500; */
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  color: grey;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /* font-family: "Montserrat-bold"; */
+}
+.calculator input {
+  outline: none;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.calculator .calc-div label {
+  color: grey;
+}
+.calculator .input-size {
+  width: 80px;
+}
+.calc-title {
+  font-weight: 500;
+  font-size: 36px;
+  margin: 30px auto 10px auto;
+}
+.calc-content {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px auto;
+  text-align: center;
+}
+.calc-div {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px 20px 20px 20px;
+  margin-bottom: 30px;
+}
+.calc-div-sec {
+  margin: 0px 0px 10px 0px;
+}
+.calc-div-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
+}
+.calc-div small {
+  margin-left: 3px;
+  color: red;
+  font-weight: bold;
+}
+.gender-btn {
+  display: flex;
+  margin: 10px 0px;
+  color: #e05754;
+}
+.gender-btn div {
+  width: 50%;
+  text-align: center;
+  padding: 9px 0px;
+  border: 1px solid #e05754;
+  font-size: 14px;
+  /* font-weight: 600; */
+  cursor: pointer;
+}
+.gender-btn i {
+  margin-right: 15px;
+  font-size: 15px;
+}
+.gender-boy {
+  border-radius: 5px 0px 0px 5px;
+}
+.gender-btn-add-colour {
+  /* transition: 0.5s; */
+  background-color: #e05754;
+
+  font-weight: bold;
+  color: white;
+  animation: slidercolur 1s;
+}
+@keyframes slidercolur {
+  0% {
+    color: #e05754;
+    background-color: white;
+  }
+  100% {
+    color: white;
+    background-color: #e05754;
+  }
+}
+
+.gender-girl {
+  border-radius: 0px 5px 5px 0px;
+}
+.age-section {
+  display: flex;
+  justify-content: space-between;
+}
+.age-number-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.age-number-input input {
+  width: 80px;
+}
+.height-section-input,
+.weight-section-input {
+  display: flex;
+  justify-content: space-between;
+}
+.height-section-input-range,
+.weight-section-input-range {
+  margin-top: 8px;
+}
+.height-section-input-range input,
+.weight-section-input-range input {
+  width: 200%;
+  padding: 0px;
+  border: none;
+}
+.height-section-input-text,
+.weight-section-input-text {
+  text-align: center;
+}
+.input-range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #e05754 25%, #c4c4c4 25%);
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.input-range-slider:hover {
+  opacity: 1;
+}
+
+.input-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #e05754;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.input-range-slider::-moz-range-thumb {
+  width: 25px;
+  /* height: 25px; */
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.result-submit-btn button {
+  outline: none;
+  font-weight: bold;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  color: white;
+  background: #e05754;
+  border-radius: 3px;
+  font-family: Montserrat;
+}
+.result-section {
+  margin-top: 30px;
+}
+.result-section-div {
+  width: 100%;
+  height: auto;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 12px 12px 0px 12px;
+}
+.result-section1-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stunting-title,
+.underweight-title,
+.wasting-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.stunting-status {
+  color: white;
+  background-color: red;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+.underweight-status {
+  color: white;
+  background-color: #ffb829;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+.wasting-status {
+  color: white;
+  background-color: #2bca3c;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+.result-section-div p {
+  text-align: justify;
+}
+.result-section-div span {
+  color: #757575;
+  font-weight: bold;
+}
+@media only screen and (max-width: 788px) {
+  .calc-div {
+    width: 80%;
+  }
+  .height-section-input-range input,
+  .weight-section-input-range input {
+    width: 250%;
+  }
+  .calculator .input-size {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .calc-content {
+    text-align: justify;
+    padding: 0px 10px;
+  }
+  .calc-div {
+    width: 95%;
+  }
+  .height-section-input-range input,
+  .weight-section-input-range input {
+    width: 150%;
+  }
+  .age-calender-input input {
+    width: 153px;
+  }
+  .calculator .input-size {
+    width: 60px;
+  }
+  .stunting-title,
+  .underweight-title,
+  .wasting-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .stunting-status,
+  .underweight-status,
+  .wasting-status {
+    font-size: 12px;
+  }
+
+  .result-section-div p {
+    font-size: 14px;
+  }
+}
