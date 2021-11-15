@@ -4,7 +4,7 @@ import "./Calculator.css";
 import reactDom from "react-dom";
 import axios from "axios";
 function Calculator() {
-  const [gender,setGender] = useState("M");
+  const [gender,setGender] = useState("Male");
   const [dis,setDis] = useState(true)
   const handleRange = (e) => {
     (document.getElementById(e.target.id)as HTMLInputElement).style.background =
@@ -16,12 +16,12 @@ function Calculator() {
     (document.getElementById(e.target.id + "-text")as HTMLInputElement).value = e.target.value;
   };
   const handleBoy = (e) => {
-    setGender("M");
+    setGender("Male");
     (document.getElementById("gender-girl") as HTMLInputElement).classList.remove("gender-btn-add-colour");
     (document.getElementById("gender-boy") as HTMLInputElement).classList.add("gender-btn-add-colour");
   };
   const handleGirl = (e) => {
-    setGender("F");
+    setGender("Female");
     // document.getElementById("gender-boy").style.
     (document.getElementById("gender-girl") as HTMLInputElement).classList.add(
       "gender-btn-add-colour"
